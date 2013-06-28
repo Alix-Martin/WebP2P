@@ -157,7 +157,7 @@ URIReferenceGrammar::URIReferenceGrammar() :
     reserved      %= gen_delims | sub_delims;
     gen_delims    %= string(":") | string("/") | string("?") | string("#") 
                    | string("[") | string("]") | string("@");
-    sub_delims    %= string("!") | string("$") | string("&") | string("\"")
+    sub_delims    %= string("!") | string("$") | string("&") | string("\'")
                    | string("(") | string(")") | string("*") | string("+")
                    | string(",") | string(";") | string("=");
 }
